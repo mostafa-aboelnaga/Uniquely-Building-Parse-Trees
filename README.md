@@ -43,56 +43,56 @@ Here's a quick visual example of what is really happening:
 <br>
 
 ## starting off by taking the first sub-expression, implementing it manually
-<img style="background-color: white" src="DemoImages/1.png" />
+<img src="DemoImages/1.png" />
 
 ## given an operator, we create a temporary tree with the operator as its root value, inserting a right child pointed at by `current2`
 
-<img style="background-color: white" src="DemoImages/2.png" />
+<img src="DemoImages/2.png" />
 
 ## now lets check the precedence
 `The operator * has higher precedence than +`
 
-<img style="background-color: white" src="DemoImages/3.0.png" />
+<img src="DemoImages/3.0.png" />
 
 ## In such case, we do the following steps:
 
-<img style="background-color: white" src="DemoImages/3.1.png" />
-<img style="background-color: white" src="DemoImages/3.2.png" />
-<img style="background-color: white" src="DemoImages/3.3.png" />
+<img src="DemoImages/3.1.png" />
+<img src="DemoImages/3.2.png" />
+<img src="DemoImages/3.3.png" />
 
 ## we are now left off at this **state**: 
 
-<img style="background-color: white" src="DemoImages/4.png" />
+<img src="DemoImages/4.png" />
 
 ## given an operand, we will store it in the position pointed at by `current2`
 
-<img style="background-color: white" src="DemoImages/4.1.png" />
+<img src="DemoImages/4.1.png" />
 
 ## here's the current **state** of our tree:
-<img style="background-color: white" src="DemoImages/4.2.png" />
+<img src="DemoImages/4.2.png" />
 
 ## given another operator, we create a temporary tree with the operator as its root value, inserting a right child pointed at by `current2`, once again.
 
-<img style="background-color: white" src="DemoImages/5.png" />
+<img src="DemoImages/5.png" />
 
 ## well, this time the operator stored at `t` or the `+` operator, has lower precedence. In such case, we do the following steps: 
 
-<img style="background-color: white" src="DemoImages/6.png" />
+<img src="DemoImages/6.png" />
 
 
-<img style="background-color: white" src="DemoImages/6.1.png" />
-<img style="background-color: white" src="DemoImages/6.2.png" />
-<img style="background-color: white" src="DemoImages/6.3.png" />
-<img style="background-color: white" src="DemoImages/6.4.png" />
-<img style="background-color: white" src="DemoImages/6.5.png" />
+<img src="DemoImages/6.1.png" />
+<img src="DemoImages/6.2.png" />
+<img src="DemoImages/6.3.png" />
+<img src="DemoImages/6.4.png" />
+<img src="DemoImages/6.5.png" />
 
 ## we are now left off at this **state**, once again
 
-<img style="background-color: white" src="DemoImages/7.png" />
+<img src="DemoImages/7.png" />
 
 ## now, given an operand, store it in the position pointed at by `current2`
 
-<img style="background-color: white" src="DemoImages/7.1.png" />
+<img src="DemoImages/7.1.png" />
 
 <br>
 <br>
@@ -104,7 +104,7 @@ Here's a quick visual example of what is really happening:
 
 ## here's the final state of our uniquely built parse tree:
 
-<img style="background-color: white" src="DemoImages/8.png" />
+<img src="DemoImages/8.png" />
 
 ## and that's about it.
 
