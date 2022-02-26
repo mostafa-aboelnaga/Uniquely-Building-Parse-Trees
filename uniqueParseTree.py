@@ -1,5 +1,6 @@
 import operator  # Required for 'evaluation' fn
 
+
 class newNode:
     # Construct to create a new node
     def __init__(self, key):
@@ -102,7 +103,7 @@ def breadthInTree(parseTree):
             current = myQ.dequeue()
 
 
-def bfs (tree):
+def bfs(tree):
     root = tree
     a = []
     b = []
@@ -122,10 +123,9 @@ def bfs (tree):
             a = b
             if even == False:
                 for i in range(len(b)):
-                    if i%2 != 0:
-                        print(b[i].data,end = " ")
+                    if i % 2 != 0:
+                        print(b[i].data, end=" ")
             b = []
-
 
 
 # Main algorithm, used to solve a non-parenthesized mathematical expression:
@@ -161,13 +161,15 @@ def buildUniqueParseTree(expression):
                 eTree.right = t
 
         else:  # Token is an operand then
-            current2.setRootVal(int(i))  # Storing the given token (operand) into the right child
+            # Storing the given token (operand) into the right child
+            current2.setRootVal(int(i))
     return eTree
 
 
 # Implementing some testing functions
 def evaluate(parseTree):
-    opers = {'+': operator.add, '-': operator.sub, '*': operator.mul, '/': operator.truediv}
+    opers = {'+': operator.add, '-': operator.sub,
+             '*': operator.mul, '/': operator.truediv}
     leftC = parseTree.getLeftChild()
     rightC = parseTree.getRightChild()
 
