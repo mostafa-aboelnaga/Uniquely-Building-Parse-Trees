@@ -1,5 +1,5 @@
 # Uniquely Building Parse Trees
- Building a parse tree from a non-parenthesized mathematical expression
+ Building a parse tree from a non-parenthesized mathematical expression, using Python.
 
 
 # ![Uniquely Building Parse Trees](https://github.com/mostafa-aboelnaga/Uniquely-Building-Parse-Trees/blob/main/DemoImages/AlgorithmIntroDemo.png?raw=true)
